@@ -9,6 +9,20 @@ class PetStore {
     console.log(petId);
   };
 
+  pettedStatus = false;
+
+  pettingButton = ()=>{
+      if(this.pettedStatus){
+          this.pettedStatus=false;
+      }
+      else{
+          this.pettedStatus=true;
+      }
+
+  }
+
+
+
   constructor() {
     makeAutoObservable(this);
   }
